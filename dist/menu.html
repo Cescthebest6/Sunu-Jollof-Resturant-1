@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Sunu Jollof</title>
+    <link rel="stylesheet" crossorigin href="/assets/app-D6tAqEK1.css">
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Header -->
+    <header
+      class="py-4 md:py-3 bg-gradient-to-r from-amber-600 to-red-500 shadow-xl/30"
+    >
+      <div class="container mx-auto">
+        <nav
+          class="flex flex-col md:flex-row justify-between items-center px-4"
+        >
+          <a
+            href="index.html"
+            id="home"
+            class="flex justify-center md:justify-start"
+          >
+            <img
+              class="w-16 h-16"
+              style="
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+                background: white;
+                border-radius: 50%;
+                padding: 8px;
+              "
+              src="data:image/png;base64,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"
+              alt="Sunu Jollof Logo"
+            />
+          </a>
+          <ul
+            class="flex flex-col md:flex-row items-center mt-6 md:mt-0 gap-6 md:gap-x-8 uppercase text-white font-semibold w-full md:w-auto text-center"
+          >
+            <li class="w-full md:w-auto">
+              <a class="block py-2 hover:text-black" href="index.html">home</a>
+            </li>
+            <li class="w-full md:w-auto">
+              <a class="block py-2 hover:text-black" href="index.html#about"
+                >about us</a
+              >
+            </li>
+            <li class="w-full md:w-auto">
+              <a class="block py-2 hover:text-black visited:text-black" href="menu.html"
+                >our menu</a
+              >
+            </li>
+            <li class="w-full md:w-auto">
+              <a class="block py-2 hover:text-black" href="contact.html"
+                >contact us</a
+              >
+            </li>
+          </ul>
+          <div
+            class="h-10 w-40 text-center mt-6 md:mt-0 hover:bg-amber-600 uppercase text-white font-semibold bg-amber-500 rounded-full py-2  transition delay-150 duration-150 ease-in-out hover:-translate-y-1 hover:scale-110"
+          >
+            <a style="text-shadow: 2px 2px 8px #000" href="#menu" class="block"
+              >Recipes</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative h-[90vh] bg-[url('/assets/images/chef.jpg')] bg-cover bg-center bg-no-repeat"
+      >
+        <!-- Dark overlay for better text readability -->
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <!-- Hero content -->
+        <div
+          class="relative z-10 container mx-auto h-full flex flex-col justify-center items-center text-center px-4"
+        >
+          <h1
+            class="text-6xl md:text-7xl text-white font-serif mb-8"
+            style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5)"
+          >
+            Explore Food <span class="text-amber-400"> Menu</span>
+          </h1>
+          <div class="max-w-3xl mx-auto">
+            <p
+              class="text-xl md:text-2xl text-white mb-12 leading-relaxed"
+              style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5)"
+            >
+              Sunu Jollof Restuarant delivers tasty & healthy foods.
+              Intercontinental and local foods and drinks are served anytime.
+              Sunu Jollof Restaurant serves thousands of customers in Banjul,The
+              Gambia.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row gap-6 justify-center">
+            <a
+              href="index.html#Book"
+              class="px-18 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold transition duration-100 text-lg"
+            >
+              Book
+            </a>
+            <a
+              href="#menu-items"
+              class="px-12 py-4 border-2 border-amber-400 text-amber-400 hover:bg-amber-600 hover:border-amber-600 hover:text-white font-bold transition duration-100 text-lg"
+            >
+              View Menu
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="menu-items" class="container mx-auto px-4 py-16">
+        <h2 id="menu"
+          class="text-4xl md:text-5xl mb-12 font-bold text-center text-gray-800"
+        >
+          Our Delicious <span class="text-amber-400"> Menu</span>
+        </h2>
+
+        <div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Jollof Rice -->
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/Jollof%20Rice%20Recipe%20Ingredients_%20%20_%202%20cups%E2%80%A6-BBSoSzAC.jpg"
+                alt="Jollof Rice"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Jollof Rice</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D200</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Our signature Jollof Rice, perfectly seasoned and cooked to
+                perfection.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20Order%20Jollof%20Rice"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300 "> Place Order</a>
+             
+            </div>
+          </div>
+
+          <!-- Grilled Chicken Bowl -->
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/Epic%20Grilled%20Chicken%20Bowl%20with%20Creamy%20Avocado%E2%80%A6-BQ3S3949.jpg"
+                alt="Grilled Chicken Bowl"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Grilled Fish Bowl
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D350</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Succulent grilled chicken served with fresh vegetables and our
+                special house sauce.
+              </p>
+
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20Order%20Grilled%20Fish"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+
+          <!-- Grilled Octopus -->
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/Grilled%20Octopus_%20A%20Delicious%20and%20Nutritious%E2%80%A6-72_08qFH.jpg"
+                alt="Grilled Octopus"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Grilled Octopus
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D800</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Tender grilled octopus seasoned with herbs and served with a
+                citrus dressing.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20Order%20Grilled%20Octopus"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+
+          <!-- Fruit Salad -->
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/Mixed%20Fruit%20with%20Lemon-Basil%20Dressing-CUIHeVmC.jpg"
+                alt="Fruit Salad"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Mixed Fruit Salad
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D100</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Fresh seasonal fruits served with a honey-lime dressing and mint
+                leaves.
+              </p>
+               <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20Order%20Fruit%20Salad"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+
+          <!-- Fried Rice -->
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/fried-rice-Dv2XKUSp.jpg"
+                alt="Fried Rice"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Special Fried Rice
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D150</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Flavorful fried rice with vegetables, eggs, and your choice of
+                protein.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20Order%20Fried%20Rice"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+
+          <!-- Grilled Meats -->
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/Grilled%20Meats%20_%20Crispy%20Fries%20with%20the%E2%80%A6-B6KVhL0z.jpg"
+                alt="Grilled Meats"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Grilled Meat Platter
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D250</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Assorted grilled meats served with crispy fries and our
+                signature sauce.
+              </p>
+               <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20Order%20Grilled%20Meat"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+
+          <!-- Chicken Wings -->
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/The%20BEST%20cilantro%20lime%20chicken%20wing%20recipe!%20These%E2%80%A6-C0lfR8H-.jpg"
+                alt="Chicken Wings"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Cilantro Lime Wings
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D200</span>
+              <p class="text-gray-600 text-lg lg:mb-14 mb-6">
+                Crispy chicken wings tossed in our special cilantro-lime sauce.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20Order%20Cilantro%20Lime%20Wings"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+
+          <!-- Pizza Burger -->
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/The%20Ultimate%20Pizza%20Burger%20Recipe-Df6MD92S.jpg"
+                alt="Pizza Burger"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Ultimate Pizza Burger
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D200</span>
+              <p class="text-gray-600 text-lg mb-6">
+                A fusion delight combining the best of pizza and burger in one
+                amazing dish.
+              </p>
+               <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20Order%20Pizza%20Burger"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+
+          <!-- Ice Cream Sundae -->
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/Waffle%20_%20Whisk_%20Black%20Forest%20Ice%20Cream%20Sundae%E2%80%A6-CB96NwWV.jpg"
+                alt="Ice Cream Sundae"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Black Forest Sundae
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D100</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Decadent ice cream sundae with chocolate sauce, cherries, and
+                whipped cream.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20Order%20Ice%20Cream%20Sundae"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/porchegg-Chze-nyI.jpg"
+                alt="Porchegg"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Porchegg</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D150</span>
+              <p class="text-gray-600 text-lg mb-6">
+                A delicate egg gently cooked in simmering water until the whites are set.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Porch%20Egg"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/crab-Cn-Eazbf.jpg"
+                alt="Grilled Crab"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Grilled Crab
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D100</span>
+              <p class="text-gray-600 text-lg lg:mb-14 mb-6">
+               Fresh crab grilled to perfection, infused with smoky flavors and.
+              </p>
+               <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Grilled%20Crab"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/seafood-CFMTQJ6t.jpg"
+                alt="Grilled Octopus"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Sea Food</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D500</span>
+              <p class="text-gray-600 text-lg mb-6">
+               Seafood includes a variety of delicious sea creatures like fish, crab, shrimp and more.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Sea%20Food"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/susage-B6PlOt4l.jpg"
+                alt="Susage"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Susage</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D300</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Sausage is a seasoned meat product made from ground pork, beef, or other meats,
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Susage"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/chicken-CvO8ALAm.jpg"
+                alt="Grilled Chicken"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Grilled Chicken
+              </h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D350</span>
+              <p class="text-gray-600 text-lg mb-6">
+                 Chicken marinated with spices, then perfectly grilled for a smoky,flavor.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Grilled%20Chicken"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/fufu-BUHxg3_f.jpg"
+                alt="Fufu"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Fufu</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D100</span>
+              <p class="text-gray-600 text-lg mb-6">
+               Fufu is a soft, staple food commonly enjoyed in many Africans Countries.
+              </p>
+               <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Fufu"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+            <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/fried-rice-chicken-RmLfITmS.jpg"
+                alt="chicken with rice"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Fried Rice With Chicken</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D300</span>
+              <p class="text-gray-600 text-lg mb-6">
+                A flavorful mix of jasmine rice stir-fried with tender chicken, crisp vegetables.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Fried%20Rice%20With%20Chicken"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+            <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/vegitables-CaIqCBlM.jpg"
+                alt="vegetables"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Vegetables</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D200</span>
+              <p class="text-gray-600 text-lg lg:mb-14 mb-6">
+                Vegetables are nutrient-rich, plant-based foods packed with vitamins, minerals, fiber.
+              </p>
+               <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Vegetables"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+            <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/One%20Pan%20Tomato%20Basil%20Pasta%20-%20Baker%20by%20Nature-CxyTt90A.jpg"
+                alt="Basil Pasta"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Basil Pasta</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D300</span>
+              <p class="text-gray-600 text-lg lg:mb-14 mb-6">
+                Our Basil pasta features al dente noodles tossed in a vibrant basil-infused sauce.
+              </p>
+              <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Basil%20Pasta"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+            <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/HENNESSY%20XO-DvyhgwZi.jpg"
+                alt="Hennessy"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Hennessy</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D150</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Hennessy is one of the world’s most iconic cognac brands, known for its rich heritage.
+              </p>
+               <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Hennessy"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+            <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/cafe-EpZNK6pn.jpg"
+                alt="Cafe"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Café</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D100</span>
+              <p class="text-gray-600 text-lg mb-6">
+                Our café is your perfect spot to relax and enjoy life's simple pleasures.
+              </p>
+               <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Cafe"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+            <div
+            class="bg-white shadow-xl/30 shadow-black rounded-lg overflow-hidden"
+          >
+            <div class="p-6">
+              <img
+                class="w-full h-64 object-cover rounded-lg shadow-xl/30 shadow-black mb-6"
+                src="/assets/ice-cream-CXvW_FyZ.jpg"
+                alt="ice-cream"
+              />
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Ice Cream</h2>
+              <span class="text-2xl font-medium mb-7 text-red-400">D100</span>
+              <p class="text-gray-600 text-lg mb-6">
+               Ice cream is a frozen dessert made from dairy products like milk and cream
+              </p>
+               <a href="https://wa.me/2203695565?text= Hello%20Sunu%20Jollof%20Restaurant%20%20I%20Want%20To%20Order%20Ice%20Cream"
+              target="_blank"
+               class="px-26 lg:px-21 items-center py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-md transition duration-300"> Place Order</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="bg-blue-950 ">
+        <div class=" text-white py-16">
+          <div class="container mx-auto px-4">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 md:px-0"
+             >
+              <div class="text-center md:text-left">
+                <a href="#" id="home" class="inline-block">
+                  <img
+                    src="data:image/png;base64,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"
+                    alt="Sunu Jollof Logo"
+                    class="w-16 mb-4 bg-white rounded-full p-2 mx-auto md:mx-0"
+                  />
+                </a>
+
+                <p class="text-gray-300 mt-4">
+                  Bringing you authentic West African flavors, made with love
+                  and the finest ingredients.
+                </p>
+              </div>
+
+              <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                  <li>
+                    <a href="index.html" class="text-gray-300 hover:text-amber-500"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="index.html#about" class="text-gray-300 hover:text-amber-500"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-gray-300 hover:text-amber-500"
+                      >Our Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html" class="text-gray-300 hover:text-amber-500"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <ul class="space-y-2 text-gray-300">
+                  <li>123 Lancaster Street</li>
+                  <li>Banjul, The Gambia</li>
+                  <li>Phone: +2203695565</li>
+                  <li>Email: info@sunujollof.com</li>
+                </ul>
+              </div>
+
+              <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4">Opening Hours</h3>
+                <ul class="space-y-2 text-gray-300">
+                  <li>Monday - Friday: 9am - 10pm</li>
+                  <li>Saturday: 10am - 11pm</li>
+                  <li>Sunday: 10am - 9pm</li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="border-t border-gray-700 leading-8 mt-12 pt-8 text-center text-gray-400"
+             >
+              <p>Made with❣️with Tailwind, JavaScipt & Html, By <strong class="text-amber-500">Amadou Saikou Jallow</strong></p>
+              <p>&copy; 2026 JCC Student. All rights reserved.</p>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
